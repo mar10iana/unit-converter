@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800|Poppins:700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active" onclick=" menu(100) ">Home</a>
+        <a href="#Massa" onclick=" menu(0) " >Massa</a> 
+        <a href="#Comprimento" onclick=" menu(1) " >Comprimento</a>
+        <a href="#Tempo" onclick=" menu(2) " >Tempo</a>
+        <a href="#Volume" onclick=" menu(3) " >Volume</a>
+        <a href="#Força" onclick=" menu(4) " >Força</a>
+        <a href="#Massa Específica" onclick=" menu(5) " >Massa Específica</a>
+        <a href="#Velocidade" onclick=" menu(6) " >Velocidade</a>
+        <a href="#Pressão" onclick=" menu(7) " >Pressão</a>
+        <a href="#Energia" onclick=" menu(8) " >Energia</a>
+        <a href="#Frequência" onclick=" menu(9) " >Frequência</a>
+        <a href="#Temperatura" onclick=" menu(10) " >Temperatura</a>
+        <a href="#Potência" onclick=" menu(11) " >Potência</a>
+        </a>
+      </div>
+
+      <div id= "Home"  >
+        <img src="img.png" class="center">
+    
+    </div>
+
+      <div id= "Massa" style="display:none;">
+
+      
+          <header>
+            <h1>   Massa </h1>
+          </header>
+          
+          <p>Digite um valor, usando o ponto (.) como separador decimal, em qualquer um dos campos para converter entre as medidas:</p>
+
+          <div class="container">
+            <div class="inputContainer">
+              <label for="kg">Quilogramas (Kg) : </label><input type="number" name="" id="kg" placeholder="Quilogramas" oninput="massaconvertToOthers('kg',this.value)">
+          </div>
+          <div class="inputContainer">
+              <label for="lb">Libras (lb) : </label><input type="number" name="" id="lb" placeholder="Libras" oninput="massaconvertToOthers('lb',this.value)">
+          </div>
+          <div class="inputContainer">
+              <label for="oz">Onças (oz) : </label><input type="number" name="" id="oz" placeholder="Onças" oninput="massaconvertToOthers('oz',this.value)">
+          </div>
+          <div class="inputContainer">
+            <label for="st">Stones (st) : </label><input type="number" name="" id="st" placeholder="Stones" oninput="massaconvertToOthers('st',this.value)">
+          </div>
+          <div class="inputContainer">
+            <label for="c"> Quilates (c) : </label><input type="number" name="" id="c" placeholder="Quilates" oninput="massaconvertToOthers('c',this.value)">
+          </div>
+        
+        </div>
+          
+          <script src="massa.js"> </script> 
+        
+      </div>
+
+      
+
+      <div id= "Comprimento" style="display:none;">
+
+        <h1>   Comprimento </h1>
+
+        <p>Digite um valor, usando o ponto (.) como separador decimal, em qualquer um dos campos para converter entre as medidas:</p>
+
+        <div class="container">
+          <div class="inputContainer">
+            <label for="meter">Metros (m) : </label><input type="number" name="" id="meter" placeholder="Metros" oninput="convertToOthers('meter',this.value)">
+        </div>
+        <div class="inputContainer">
+            <label for="feet">Pés (ft) : </label><input type="number" name="" id="feet" placeholder="Pés" oninput="convertToOthers('feet',this.value)">
+        </div>
+        <div class="inputContainer">
+            <label for="miles">Milhas Terrestres (mile) : </label><input type="number" name="" id="miles" placeholder="Milhas Terrestres" oninput="convertToOthers('mile',this.value)">
+        </div>
+        <div class="inputContainer">
+          <label for="NM">Milhas Náuticas (NM) : </label><input type="number" name="" id="NM" placeholder="Milhas Náuticas" oninput="convertToOthers('NM',this.value)">
+        </div>
+        <div class="inputContainer">
+          <label for="inches">Polegadas (in) : </label><input type="number" name="" id="inches" placeholder="Polegadas" oninput="convertToOthers('inch',this.value)">
+        </div>
+        <div class="inputContainer">
+          <label for="yards">Jardas (yd) : </label><input type="number" name="" id="yards" placeholder="Jardas" oninput="convertToOthers('yard',this.value)">
+        </div>
+
+      </div>
+
+      <script src="comp.js"> </script> 
+
+      </div>
+
+      <div id= "Tempo" style="display:none;">
+
+            <h1>   Tempo </h1>
+          
+          <p>Digite um valor, usando o ponto (.) como separador decimal, em qualquer um dos campos para converter entre as medidas:</p>
+        
+          <div class="container">
+            <div class="inputContainer">
+              <label for="seg"> Segundos (s) : </label><input type="number" name="" id="seg" placeholder="Segundos" oninput="timeconvertToOthers('seg',this.value)">
+            </div>
+            <div class="inputContainer">
+              <label for="min">Minutos (min) : </label><input type="number" name="" id="min" placeholder="Minutos" oninput="timeconvertToOthers('min',this.value)">
+            </div>
+            <div class="inputContainer">
+              <label for="hora">Horas (h) : </label><input type="number" name="" id="hora" placeholder="Horas" oninput="timeconvertToOthers('hora',this.value)">
+            </div>
+          </div> 
+
+          <script src="tempo.js"> </script> 
+
+      </div>
+
+      <div id= "Volume" style="display:none;">
+
+        <h1>   Volume </h1>
+
+        <p>Digite um valor, usando o ponto (.) como separador decimal, em qualquer um dos campos para converter entre as medidas:</p>
+        
+        <div class="container">
+          <div class="inputContainer">
+            <label for="metcub">Metros Cúbicos (m<sup>3</sup>) : </label><input type="number" name="" id="metcub" placeholder="Metros Cúbicos" oninput="volconvertToOthers('metcub',this.value)">
+          </div>
+          <div class="inputContainer">
+            <label for="litro">Litros (L) = Decímetros cúbicos (dm<sup>3</sup>) : </label><input type="number" name="" id="litro" placeholder="Litros" oninput="volconvertToOthers('litro',this.value)">
+          </div>
+          <div class="inputContainer">
+            <label for="cup">Chávena (cup): </label><input type="number" name="" id="cup" placeholder="Chávenas" oninput="volconvertToOthers('cup',this.value)">
+          </div>
+          <div class="inputContainer">
+            <label for="uk">Imperial Gallon (UK gal) : </label><input type="number" name="" id="uk" placeholder="Imperial Gallon" oninput="volconvertToOthers('uk',this.value)">
+          </div>
+          <div class="inputContainer">
+            <label for="us">US Gallon (US gal) : </label><input type="number" name="" id="us" placeholder="US Gallon" oninput="volconvertToOthers('us',this.value)">
+          </div>
+        </div> 
+
+        <script src="vol.js"></script>
+
+      </div>   
+
+      <div id= "Força" style="display:none;" >
+
+        <h1>   Força </h1>
+
+        <p>Digite um valor, usando o ponto (.) como separador decimal, em qualquer um dos campos para converter entre as medidas:</p>
+        
+        <div class="container">
+          <div class="inputContainer">
+            <label for="newton">Newton (N) : </label><input type="number" name="" id="newton" placeholder="Newtons" oninput="forceconvertToOthers('newton',this.value)">
+          </div>
+          <div class="inputContainer">
+            <label for="kgf">Quilograma-Força (Kg-f) : </label><input type="number" name="" id="kgf" placeholder="Quilograma-Força" oninput="forceconvertToOthers('kgf',this.value)">
+          </div>
+          <div class="inputContainer">
+            <label for="lbf">Libra-Força (lb-f) : </label><input type="number" name="" id="lbf" placeholder="Libra-Força" oninput="forceconvertToOthers('lbf',this.value)">
+          </div>
+          <div class="inputContainer">
+            <label for="dyn">Dyne (dyn) : </label><input type="number" name="" id="dyn" placeholder="Dyne" oninput="forceconvertToOthers('dyn',this.value)">
+          </div>
+        </div> 
+
+        <script src="force.js"></script>
+
+      </div>
+
+      <div id= "Massa Específica" style="display:none;">
+
+        <h1>   Massa Específica </h1>
+
+        <p>Digite um valor, usando o ponto (.) como separador decimal, em qualquer um dos campos para converter entre as medidas:</p>
+        
+        <div class="container">
+          <div class="inputContainer">
+              <label for="Kgmc">Quilogramas por metro cúbico (Kg/m<sup>3</sup>) : </label><input type="number" name="" id="Kgmc" placeholder="Kg por Metro Cúbico" oninput="densconvertToOthers('Kgmc',this.value)">
+          </div>
+          <div class="inputContainer">
+              <label for="lbpc">Libra por pés cúbicos (lb/ft<sup>3</sup>): </label><input type="number" name="" id="lbpc" placeholder="Lb por pés cúbicos" oninput="densconvertToOthers('lbpc',this.value)">
+          </div>
+          <div class="inputContainer">
+              <label for="slugpc">Slug por pés cúbicos (slug/ft<sup>3</sup>): </label><input type="number" name="" id="slugpc" placeholder="Slug por pés cúbicos" oninput="densconvertToOthers('slugpc',this.value)">
+          </div>
+      </div> 
+
+      <script src="dens.js"></script>
+
+      </div>
+
+      <div id= "Velocidade" style="display:none;">
+
+        <h1>   Velocidade </h1>
+
+        <p>Digite um valor, usando o ponto (.) como separador decimal, em qualquer um dos campos para converter entre as medidas:</p>
+
+        <div class="container">
+          <div class="inputContainer">
+            <label for="ms">Metros por segundo (m/s) : </label><input type="number" name="" id="ms" placeholder="Metros por Segundo" oninput="velconvertToOthers('ms',this.value)">
+          </div>
+          <div class="inputContainer">
+            <label for="kmh">Quilómetros por hora (Km/h) : </label><input type="number" name="" id="kmh" placeholder="Quilómetros por Hora" oninput="velconvertToOthers('kmh',this.value)">
+          </div>
+          <div class="inputContainer">
+            <label for="ftmin">Pés por minuto (ft/min) : </label><input type="number" name="" id="ftmin" placeholder="Pés por Minuto" oninput="velconvertToOthers('ftmin',this.value)">
+          </div>
+          <div class="inputContainer">
+            <label for="kt">Nós (kt) : </label><input type="number" name="" id="kt" placeholder="Nós" oninput="velconvertToOthers('kt',this.value)">
+          </div>
+          <div class="inputContainer">
+            <label for="mph">Milhas por hora (mph) : </label><input type="number" name="" id="mph" placeholder="Milhas por Hora" oninput="velconvertToOthers('mph',this.value)">
+          </div>
+
+        </div>
+        
+        <script src="vel.js"> </script> 
+
+        </div>
+
+      <div id= "Pressão" style="display:none;" >
+
+        <h1>   Pressão </h1>
+
+        <p>Digite um valor, usando o ponto (.) como separador decimal, em qualquer um dos campos para converter entre as medidas:</p>
+
+        <div class="container">
+          <div class="inputContainer">
+            <label for="pa">Pascal (Pa) : </label><input type="number" name="" id="pa" placeholder="Pascal" oninput="preconvertToOthers('pa',this.value)">
+          </div>
+          <div class="inputContainer">
+            <label for="bar">Bar (bar) : </label><input type="number" name="" id="bar" placeholder="Bar" oninput="preconvertToOthers('bar',this.value)">
+          </div>
+          <div class="inputContainer">
+            <label for="atm"> Atmosfera (atm) : </label><input type="number" name="" id="atm" placeholder="Atmosfera" oninput="preconvertToOthers('atm',this.value)">
+          </div>
+          <div class="inputContainer">
+            <label for="h2o">Polegada de água (in H<sub>2</sub>O): </label><input type="number" name="" id="h2o" placeholder="Polegada de água" oninput="preconvertToOthers('h2o',this.value)">
+          </div>
+          <div class="inputContainer">
+            <label for="hg">Polegada de mercúrio (in Hg): </label><input type="number" name="" id="hg" placeholder="Polegada de mercúrio" oninput="preconvertToOthers('hg',this.value)">
+          </div>
+
+        </div>
+        
+        <script src="pressao.js"> </script> 
+
+      </div>
+
+
+      <div id= "Energia" style="display:none;">
+
+        <h1>   Energia </h1>
+
+        <p>Digite um valor, usando o ponto (.) como separador decimal, em qualquer um dos campos para converter entre as medidas:</p>
+        
+        <div class="container">
+          <div class="inputContainer">
+              <label for="joule">Joules (J) : </label><input type="number" name="" id="joule" placeholder="Joules" oninput="enconvertToOthers('joule',this.value)">
+          </div>
+          <div class="inputContainer">
+              <label for="cal">Caloria (cal) : </label><input type="number" name="" id="cal" placeholder="Calorias" oninput="enconvertToOthers('cal',this.value)">
+          </div>
+          <div class="inputContainer">
+              <label for="btu">British Thermal Unit (Btu): </label><input type="number" name="" id="btu" placeholder="British Thermal Unit" oninput="enconvertToOthers('btu',this.value)">
+          </div>
+      </div> 
+        </div>
+
+        <script src="energia.js"> </script> 
+      
+      <div id= "Frequência" style="display:none;">
+
+        <h1>   Frequência </h1>
+
+
+        <p>Digite um valor, usando o ponto (.) como separador decimal, em qualquer um dos campos para converter entre as medidas:</p>
+        
+        <div class="container">
+          <div class="inputContainer">
+              <label for="htz">Hertzs (Hz) : </label><input type="number" name="" id="htz" placeholder="Hertz" oninput="freqconvertToOthers('htz',this.value)">
+          </div>
+          <div class="inputContainer">
+              <label for="rad">Radianos por Segundo (rad/s) : </label><input type="number" name="" id="rad" placeholder="Radianos por Segundo" oninput="freqconvertToOthers('rad',this.value)">
+          </div>
+          <div class="inputContainer">
+              <label for="rpm"> Rotações por Minuto (rpm) : </label><input type="number" name="" id="rpm" placeholder="Rotações por Minuto" oninput="freqconvertToOthers('rpm',this.value)">
+          </div>
+      </div> 
+
+      <script src="freq.js"> </script> 
+
+      </div>
+
+      <div id= "Temperatura" style="display:none;">
+
+        <h1>   Temperatura </h1>
+
+        <div class="container">
+          <div class="inputContainer">
+              <label for="K"> Kelvin (K) : </label><input type="number" name="" id="K" placeholder="Kelvin" oninput="TempconvertToOthers('K',this.value)">
+          </div>
+          <div class="inputContainer">
+              <label for="C">Celsius (ºC) : </label><input type="number" name="" id="C" placeholder="Celsius" oninput="TempconvertToOthers('C',this.value)">
+          </div>
+          <div class="inputContainer">
+              <label for="F">Fahrenheit (ºF) : </label><input type="number" name="" id="F" placeholder="Fahrenheit" oninput="TempconvertToOthers('F',this.value)">
+          </div>
+      </div> 
+
+      <script src="temperatura.js"> </script> 
+
+      </div>
+
+      <div id= "Potência" style="display:none;">
+
+        <h1>   Potência </h1>
+
+        <p>Digite um valor, usando o ponto (.) como separador decimal, em qualquer um dos campos para converter entre as medidas:</p>
+        
+        <div class="container">
+          <div class="inputContainer">
+            <label for="watt">Watts (W) : </label><input type="number" name="" id="watt" placeholder="Watts" oninput="potconvertToOthers('watt',this.value)">
+          </div>
+          <div class="inputContainer">
+            <label for="bhp">Cavalo (bhp) : </label><input type="number" name="" id="bhp" placeholder="Cavalos" oninput="potconvertToOthers('bhp',this.value)">
+          </div>
+          <div class="inputContainer">
+            <label for="cv">Cavalo vapor (cv) : </label><input type="number" name="" id="cv" placeholder="Cavalos Vapor" oninput="potconvertToOthers('cv',this.value)">
+          </div>
+          <div class="inputContainer">
+            <label for="kcalh">Quilocalorias por hora (Kcal/h) : </label><input type="number" name="" id="kcalh" placeholder="Quilocalorias por hora" oninput="potconvertToOthers('kcalh',this.value)">
+          </div>
+        </div> 
+
+        <script src="potencia.js"></script>
+      
+        </div>
+
+</body>
+</html>
